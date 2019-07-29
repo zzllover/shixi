@@ -57,3 +57,26 @@ DVA基于redux redux-saga react-router
 ## 使用mock数据
 
 根目录创建mock文件夹
+
+## 自定义样式
+
+不要在值上使用引号；
+.号要紧跟 hello，定义一个 class 选择器。
+
+webpack browserify 等打包工具（module bundler）的能力让工具生成局部 CSS 成为可能，CSS modules 规范也应运而生
+
+CSS 的「全局型」== 明明定义了样式，但就是不生效，原因可能是被其他样式定义所强制覆盖
+
+CSS modules 是从工具层面给出的一套生成局部 CSS 的规范，本质还是生成全局唯一的 CSS 定义。webpack 实现了这套规范。umi 依赖 webpack，默认开启了 CSS modules 特性。
+
+覆盖全局样式：
+
+:global(.ant-btn) {
+  // ...
+}
+
+## 权限控制
+
+对于权限控制，首先需要明白一点：“权限的真正控制都必须是在服务端负责的”。
+
+前端的权限则大部分仅限于 UI 控制
