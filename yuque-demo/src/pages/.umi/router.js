@@ -117,6 +117,29 @@ const routes = [
         ],
       },
       {
+        path: '/comp',
+        routes: [
+          {
+            path: '/comp/list',
+            component: require('../List/List-1/index').default,
+            exact: true,
+          },
+          {
+            path: '/comp/list2',
+            component: require('../List/List-2/index').default,
+            exact: true,
+          },
+          {
+            component: () =>
+              React.createElement(
+                require('/Users/mi/Desktop/shixi/yuque-demo/node_modules/_umi-build-dev@1.10.14@umi-build-dev/lib/plugins/404/NotFound.js')
+                  .default,
+                { pagesPath: 'src/pages', hasRoutesInConfig: true },
+              ),
+          },
+        ],
+      },
+      {
         component: () =>
           React.createElement(
             require('/Users/mi/Desktop/shixi/yuque-demo/node_modules/_umi-build-dev@1.10.14@umi-build-dev/lib/plugins/404/NotFound.js')

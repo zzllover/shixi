@@ -42,6 +42,15 @@ class BasicLayout extends Component {
                             <Menu.Item key="12"><Link to="/dva/card-4">Card-4</Link></Menu.Item>
                             <Menu.Item key="13"><Link to="/dva/card-5">Card-5</Link></Menu.Item>
                         </SubMenu>
+                        <SubMenu key="sub5"
+                            title={<span><Icon type="car" /><span>复杂页面</span></span>}>
+                             <Menu.Item key="14"><Link to="/comp/list">表格</Link></Menu.Item>
+                             <Menu.Item key="15"><Link to="/comp/list2">表格</Link></Menu.Item>
+                            {/*<Menu.Item key="15"><Link to="/dva/card-2">Card-2</Link></Menu.Item>
+                            <Menu.Item key="16"><Link to="/dva/card-3">Card-3</Link></Menu.Item>
+                            <Menu.Item key="17"><Link to="/dva/card-4">Card-4</Link></Menu.Item>
+                            <Menu.Item key="18"><Link to="/dva/card-5">Card-5</Link></Menu.Item> */}
+                        </SubMenu>
                     </Menu>
 
                 </Sider>

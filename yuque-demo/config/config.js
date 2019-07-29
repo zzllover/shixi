@@ -46,7 +46,14 @@ export default {
                     //{path:'/dva/react-state',component:'React/ReactState'},
                     //{path:'/dva/react-controller-component',component:'React/ReactControllerComponent'}
                 ]
-            }
+            },
+            {
+                path: '/comp',
+                routes: [
+                    { path: '/comp/list', component: 'List/List-1/index' },
+                    { path: '/comp/list2', component: 'List/List-2/index' },
+                ]
+            },
         ]
     }],
     /*proxy: {

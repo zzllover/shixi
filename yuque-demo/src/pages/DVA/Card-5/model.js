@@ -1,4 +1,4 @@
-import request from '../../../util/request';  // request 是 demo 项目脚手架中提供的一个做 http 请求的方法，是对于 fetch 的封装，返回 Promise
+import request from '../../util/request';  // request 是 demo 项目脚手架中提供的一个做 http 请求的方法，是对于 fetch 的封装，返回 Promise
 
 const delay = (millisecond) => {
   return new Promise((resolve) => {

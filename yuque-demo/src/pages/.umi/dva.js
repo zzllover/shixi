@@ -22,6 +22,8 @@ export function _onCreate() {
   
   app.model({ namespace: 'cards', ...(require('/Users/mi/Desktop/shixi/yuque-demo/src/models/cards.js').default) });
 app.model({ namespace: 'model', ...(require('/Users/mi/Desktop/shixi/yuque-demo/src/pages/DVA/Card-5/model.js').default) });
+app.model({ namespace: 'model', ...(require('/Users/mi/Desktop/shixi/yuque-demo/src/pages/List/List-1/model.js').default) });
+app.model({ namespace: 'model', ...(require('/Users/mi/Desktop/shixi/yuque-demo/src/pages/List/List-2/model.js').default) });
   return app;
 }
 
