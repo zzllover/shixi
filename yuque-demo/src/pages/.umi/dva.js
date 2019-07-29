@@ -20,8 +20,8 @@ export function _onCreate() {
     app.use(plugin);
   });
   
-  app.model({ namespace: 'cards', ...(require('/Users/mi/Desktop/JustStartFromHere/yuque-demo/src/models/cards.js').default) });
-app.model({ namespace: 'model', ...(require('/Users/mi/Desktop/JustStartFromHere/yuque-demo/src/pages/DVA/Card-5/model.js').default) });
+  app.model({ namespace: 'cards', ...(require('/Users/mi/Desktop/shixi/yuque-demo/src/models/cards.js').default) });
+app.model({ namespace: 'model', ...(require('/Users/mi/Desktop/shixi/yuque-demo/src/pages/DVA/Card-5/model.js').default) });
   return app;
 }
 

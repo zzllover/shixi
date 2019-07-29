@@ -43,7 +43,7 @@ const routes = [
           {
             component: () =>
               React.createElement(
-                require('/Users/mi/Desktop/JustStartFromHere/yuque-demo/node_modules/_umi-build-dev@1.10.14@umi-build-dev/lib/plugins/404/NotFound.js')
+                require('/Users/mi/Desktop/shixi/yuque-demo/node_modules/_umi-build-dev@1.10.14@umi-build-dev/lib/plugins/404/NotFound.js')
                   .default,
                 { pagesPath: 'src/pages', hasRoutesInConfig: true },
               ),
@@ -71,7 +71,7 @@ const routes = [
           {
             component: () =>
               React.createElement(
-                require('/Users/mi/Desktop/JustStartFromHere/yuque-demo/node_modules/_umi-build-dev@1.10.14@umi-build-dev/lib/plugins/404/NotFound.js')
+                require('/Users/mi/Desktop/shixi/yuque-demo/node_modules/_umi-build-dev@1.10.14@umi-build-dev/lib/plugins/404/NotFound.js')
                   .default,
                 { pagesPath: 'src/pages', hasRoutesInConfig: true },
               ),
@@ -109,7 +109,7 @@ const routes = [
           {
             component: () =>
               React.createElement(
-                require('/Users/mi/Desktop/JustStartFromHere/yuque-demo/node_modules/_umi-build-dev@1.10.14@umi-build-dev/lib/plugins/404/NotFound.js')
+                require('/Users/mi/Desktop/shixi/yuque-demo/node_modules/_umi-build-dev@1.10.14@umi-build-dev/lib/plugins/404/NotFound.js')
                   .default,
                 { pagesPath: 'src/pages', hasRoutesInConfig: true },
               ),
@@ -119,7 +119,7 @@ const routes = [
       {
         component: () =>
           React.createElement(
-            require('/Users/mi/Desktop/JustStartFromHere/yuque-demo/node_modules/_umi-build-dev@1.10.14@umi-build-dev/lib/plugins/404/NotFound.js')
+            require('/Users/mi/Desktop/shixi/yuque-demo/node_modules/_umi-build-dev@1.10.14@umi-build-dev/lib/plugins/404/NotFound.js')
               .default,
             { pagesPath: 'src/pages', hasRoutesInConfig: true },
           ),
@@ -129,7 +129,7 @@ const routes = [
   {
     component: () =>
       React.createElement(
-        require('/Users/mi/Desktop/JustStartFromHere/yuque-demo/node_modules/_umi-build-dev@1.10.14@umi-build-dev/lib/plugins/404/NotFound.js')
+        require('/Users/mi/Desktop/shixi/yuque-demo/node_modules/_umi-build-dev@1.10.14@umi-build-dev/lib/plugins/404/NotFound.js')
           .default,
         { pagesPath: 'src/pages', hasRoutesInConfig: true },
       ),
