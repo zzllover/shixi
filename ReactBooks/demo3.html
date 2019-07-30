@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>React源起(3)</title>
+</head>
+
+<body>
+
+    <div class="wrap"></div>
+
+    <script>
+
+        const createDOMFromString = (domString) => {
+            const div = document.createElement('div');
+            div.innerHTML = domString;
+            return div;
+        }
+
+        class LikeBtn {
+            constructor() {
+                this.state = {
+                    isLike: false
+                }
+            }
+
+            setState(state) {
+                const oldEl = this.el;
+                this.state = state;
+                this.el = this.render();//重新渲染，而非频繁操作DOM 进行修改
+                if (this.onStateChange) this.onStateChange(oldEl, this.el);
+            }
+
+            changeText() {
+                this.setState({
+                    isLike: !this.state.isLike
+                })
+            }
+
+            render() {
+                this.el = createDOMFromString(`
+                    <button class='like-btn'>
+                        <span class='like-text'>${this.state.isLike ? '取消' : '点赞'}</span>
+                        <span>👍</span>
+                    </button>
+                `)
+                this.el.addEventListener('click',this.changeText.bind(this),'false');
+                return this.el;
+            }
+        }
+
+
+        let button1 = new LikeBtn();
+        const wrap = document.querySelector('.wrap');
+        wrap.appendChild(button1.render());
+        button1.onStateChange = (oldEl,newEl)=>{
+            wrap.insertBefore(newEl,oldEl);
+            wrap.removeChild(oldEl);
+        }
+
+    </script>
+</body>
+
+</html>
