@@ -34,7 +34,7 @@ export default class CommentInput extends React.Component{
                     <span className='comment-text'>评价:</span>
                     <textarea className='comment-content' value={this.state.comment} onChange={(e)=>{this.handleComment(e)}}/>
                 </div>
-                <div class='btn'>
+                <div className='btn'>
                     <button>发表评论</button>
                 </div>
             </div>
