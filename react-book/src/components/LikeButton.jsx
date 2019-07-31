@@ -20,8 +20,8 @@ export default class LikeButton extends React.Component{
             likedText:'取消',
             unlikedText:'点赞'
         }
-        
         return (
+            
             <button onClick={()=>{this.handleClick()}}>
                 {this.state.isLike? words.likedText:words.unlikedText}
             </button>
